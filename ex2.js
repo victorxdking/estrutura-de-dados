@@ -1,7 +1,4 @@
-// 25, 57, 48, 37, 12, 92, 86, 33
-
-// let numeros = [25, 57, 48, 37, 12, 92, 86, 33];
-let numeros = [3, 2, 1];
+let numeros = [25, 57, 48, 37, 12, 92, 86, 33];
 let x;
 
 for(let i = 0; i < numeros.length; i++) {
