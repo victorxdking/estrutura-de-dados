@@ -1,20 +1,26 @@
-let numeros = [25, 57, 48, 37, 12, 92, 86, 33];
-let x, minIndex;
+// Seleção direta
 
-for (let i = 0; i < numeros.length - 1; i++) {
-    minIndex = i;
+function selectionSort(vetor) {
+    let x, minIndex;
 
-    for (let j = i + 1; j < numeros.length; j++) {
-        if (numeros[j] < numeros[minIndex]) {
-            minIndex = j;
+    for (let i = 0; i < vetor.length - 1; i++) {
+        minIndex = i;
+
+        for (let j = i + 1; j < vetor.length; j++) {
+            if (vetor[j] < vetor[minIndex]) {
+                minIndex = j;
+            }
         }
-    }
 
-    if (minIndex !== i) {
-        x = numeros[i];
-        numeros[i] = numeros[minIndex];
-        numeros[minIndex] = x;
+        if (minIndex !== i) {
+            x = vetor[i];
+            vetor[i] = vetor[minIndex];
+            vetor[minIndex] = x;
+        }
     }
 }
 
+let numeros = [25, 57, 48, 37, 12, 92, 86, 33];
 console.log(numeros);
+selectionSort(numeros);
+console.log(numeros); // vetor ordenado
