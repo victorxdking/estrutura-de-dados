@@ -74,34 +74,39 @@ Comparação de Algoritmos de Ordenação
 Vamos comparar o Selection Sort com outros algoritmos de ordenação frequentemente estudados:
 
 Bubble Sort
-
 Eficiência: O(n²) em média e no pior caso.
 Características: Simples de implementar, mas ineficiente para listas grandes. Opera trocando elementos adjacentes se estiverem na ordem errada.
 Uso: Pode ser útil para conjuntos de dados muito pequenos ou quando a memória é uma limitação.
-Insertion Sort
 
+Insertion Sort
 Eficiência: O(n²) em média e no pior caso, mas tende a ser mais rápido que o Bubble Sort e o Selection Sort em prática, especialmente para pequenos conjuntos de dados.
 Características: Eficiente para conjuntos de dados pequenos, estável e fácil de implementar.
 Uso: Boa escolha quando se adicionam novos elementos a uma lista já ordenada.
-QuickSort
 
+QuickSort
 Eficiência: O(n log n) em média, mas O(n²) no pior caso.
 Características: Um dos algoritmos de ordenação mais rápidos e eficientes. Utiliza a estratégia de dividir para conquistar.
 Uso: Adequado para grandes conjuntos de dados, exceto quando a estabilidade é necessária.
-HeapSort
 
+HeapSort
 Eficiência: O(n log n) tanto em média quanto no pior caso.
 Características: Baseado em estrutura de dados de heap. Não é estável, mas não requer espaço adicional.
 Uso: Boa escolha para ordenação in-place com eficiência de tempo garantida.
-ShellSort
 
+ShellSort
 Eficiência: Complexidade varia conforme a sequência de lacunas utilizada, mas é significativamente mais rápido que O(n²) para a maioria das sequências.
 Características: Generalização do Insertion Sort que permite a troca de itens distantes.
 Uso: Útil para conjuntos de dados de tamanho moderado. A escolha da sequência de lacunas afeta significativamente seu desempenho.
+
 Conclusão sobre a Comparação
+
 Para conjuntos de dados pequenos: Insertion Sort e ShellSort são geralmente preferidos devido à sua simplicidade e eficiência nesse contexto.
+
 Para eficiência geral: QuickSort é frequentemente a escolha devido à sua eficiência média de tempo de O(n log n) e desempenho geralmente bom em prática.
+
 Para garantia de tempo: HeapSort oferece um desempenho consistente de O(n log n), tornando-o uma escolha sólida para dados em larga escala.
+
 Para simplicidade: Selection Sort e Bubble Sort são fáceis de entender e implementar, mas sua ineficiência para conjuntos de dados maiores limita seu uso a aplicações educacionais ou conjuntos de dados muito pequenos.
+
 Cada algoritmo tem seu lugar dependendo do tamanho do conjunto de dados, requisitos de eficiência e memória, e se a estabilidade na ordenação é uma preocupação.
 */
