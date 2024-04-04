@@ -57,6 +57,7 @@ Compara 7 e 6, troca: [3, 1, 6, 7, 4, 5, 2, 8, 9]
 Compara 7 e 4, troca: [3, 1, 6, 4, 7, 5, 2, 8, 9]
 Compara 7 e 5, troca: [3, 1, 6, 4, 5, 7, 2, 8, 9]
 Compara 7 e 2, troca: [3, 1, 6, 4, 5, 2, 7, 8, 9]
+
 O restante já está ordenado, então não há mais trocas.
 
 Passo 3:
