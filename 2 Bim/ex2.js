@@ -5,31 +5,23 @@
 ◦ Saída: “OICICREXE OTIUM ODACILPMOC”
 */
 
-function inverterPalavras(texto) {
-    let resultado = "";
-    let palavraAtual = "";
+var frase = 'abc xyz'
+var pilha = [];
+var letra, i = 0
+var fraseInvertida = ' '
 
-    // Iterar carcteres do texto
-    for (let i = 0; i < texto.length; i++) {
-        let caractere = texto[i];
-        
-        // Se o caractere não for um espaço, adicioná-lo à palavra atual
-        if (caractere !== " ") {
-            palavraAtual = caractere + palavraAtual; // Inserir o caractere no início da palavra
-        } else {
-            resultado += palavraAtual + " "; // Adicionar a palavra invertida ao resultado
-            palavraAtual = ""; // Resetar a palavra atual para a próxima palavra
-        }
+while(i < frase.length){
+    while(frase[i] != '' && i < frase.length){
+        pilha.push(frase[i])
+        i++
     }
-
-    // Adicionar a última palavra invertida ao resultado
-    resultado += palavraAtual;
-
-    // Exibir o resultado
-    console.log(resultado);
+    while(pilha.length != 0){
+        letra = pilha.pop()
+        console.log(letra)
+        fraseInvertida += letra
+    }
+    console.log(' ')
+    fraseInvertida += ' '
+    i++
 }
-
-let texto = "EXERCICIO MUITO COMPLICADO";
-console.log(texto)
-inverterPalavras(texto); 
-// "OICICREXE OTIUM ODACILPMOC"
+console.log(fraseInvertida)
