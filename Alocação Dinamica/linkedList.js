@@ -20,4 +20,12 @@ function LinkedList() {
         }
         length++;
     }
+    this.size = function(){
+        return length;
+    }
 };
+
+list = new LinkedList();
+lista.append(10);
+lista.append(12);
+console.log(lista.siza());
