@@ -19,12 +19,23 @@ function LinkedList() {
         }
         length++;
     };
+
     this.size = function(){
         return length;
     };
+
+    this.toString = function(){
+        let current = head, string = ''
+        while(current){
+            string += current.element + (current.next ? ' -> ' : '')
+            current = current.next
+        }
+        return string
+    }
 };
 
 let list = new LinkedList();
 list.append(10);
 list.append(12);
 console.log(list.size());
+console.log('Lista: ' + list.toString());
